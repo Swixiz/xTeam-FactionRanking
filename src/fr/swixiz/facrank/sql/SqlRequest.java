@@ -27,11 +27,10 @@ public class SqlRequest {
     }
 
     private Connection connection;
-    private SqlConnection sql;
 
     public SqlRequest(){
-        this.sql = FactionRanking.getInstance().getSqlConnection();
-        this.connection = sql.getConnection();
+
+        this.connection = FactionRanking.getInstance().getSqlConnection().getConnection();
         if(connection == null){
             System.out.println("NULL");
         }
@@ -51,7 +50,7 @@ public class SqlRequest {
         return tExists;
     }
 
-    public void createTablesActivePunishments() {
+    public void createFactionTable() {
         try {
             if (!isTablesExists("faction")) {
                 PreparedStatement ps = connection.prepareStatement(Request.CERATE_FACTION_TABLE.getRequest());
