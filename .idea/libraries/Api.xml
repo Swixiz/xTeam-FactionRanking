@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Api">
+    <CLASSES>
+      <root url="jar://F:/MINECRAFT/Api/Factions 2.7.3.jar!/" />
+      <root url="jar://F:/MINECRAFT/Api/MassiveCore 2.7.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

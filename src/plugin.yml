@@ -1,0 +1,8 @@
+main: fr.swixiz.facrank.FactionRanking
+name: FactionRanking
+author: Swixiz
+version: 1.0
+depends: [MassiveCore, Factions]
+commands:
+  points:
+  classement:
